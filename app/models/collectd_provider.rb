@@ -1,7 +1,7 @@
 require 'rrd'
 
 class CollectdProvider < Provider
-  attr_custom :rrd_path, :collectd_sock, :rrdcached_sock, :ignore_unknown_metrics
+  attr_custom :rrd_path, :collectd_sock, :rrdcached_sock
 
   def load_metrics(ignore_unknown_metrics = false)
     data = {}
